@@ -23,6 +23,7 @@
     </style>
 
     <style name="Theme.QuickContact" parent="@style/PeopleTheme">
+        <item name="android:itemBackground">@color/contacts_accent_color</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowFrame">@null</item>
@@ -37,6 +38,12 @@
         <item name="android:actionBarItemBackground">
             @drawable/item_background_material_borderless_dark
         </item>
+    </style>
+
+    <style name="Theme.QuickContact.DropDownList" parent="@style/Theme.QuickContact">
+        <item name="android:itemBackground">@color/contacts_accent_color</item>
+        <item name="android:colorBackground">@color/contacts_accent_color</item>
+        <item name="android:background">@color/contacts_accent_color</item>
     </style>
 
     <style name="PeopleTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
@@ -408,7 +415,7 @@
     <!-- Text style for empty states (no account view, empty label). -->
     <style name="EmptyStateTextStyle">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">#000000</item>
+        <item name="android:textColor">#505050</item>
         <item name="android:alpha">0.54</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
@@ -465,7 +472,7 @@ background and text color. See also android:style/Widget.Holo.TextView.ListSepar
 
     <style name="TextAppearanceMedium" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">#000000</item>
+        <item name="android:textColor">#505050</item>
     </style>
 
     <style name="TextAppearanceSmall" parent="@android:style/TextAppearance.Small">
